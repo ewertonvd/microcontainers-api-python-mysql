@@ -3,7 +3,7 @@ version: '3'
 services:
 
   api:
-    image: ewertonvd/api
+    image: ewertonvd/compose_api
     ports:
       - "3000:5000"
     depends_on:
@@ -18,7 +18,7 @@ services:
         condition: on-failure
 
   mysql:
-    image: ewertonvd/mysql
+    image: ewertonvd/compose_mysql
     ports:
       - "3306:3306"
     volumes:
